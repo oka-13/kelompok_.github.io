@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   <!-- Bagian formulir kontak -->
+<div class="contact-form">
+    <h1>Contact Us</h1>
+    <form>
+        <!-- Kontainer untuk First Name dan Last Name -->
+        <div class="name-container">
+            <!-- Input Nama Depan -->
+            <div class="input-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            
+            <!-- Input Nama Belakang -->
+            <div class="input-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+        </div>
+
+        <!-- Input Alamat Email -->
+        <label for="email-address">Email Address *</label>
+        <input type="email" id="email-address" name="email-address" required>
+
+        <!-- Input Tipe Pertanyaan -->
+        <label for="query-type">Query Type *</label>
+        <div class="query-type-container">
+            <div class="query-option">
+        <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry" checked>
+        <label for="general-enquiry">General Enquiry</label>
+    </div>
+
+    <!-- Kotak terpisah untuk Support Request -->
+    <div class="query-option">
+        <input type="radio" id="support-request" name="query-type" value="Support Request">
+        <label for="support-request">Support Request</label>
+    </div>
+</div>
+
+        <!-- Input Pesan -->
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="7" required></textarea>
+
+        <!-- Input Persetujuan -->
+        <div class="consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I consent to being contacted by the team *</label>
+        </div>
+
+        <!-- Tombol Kirim -->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

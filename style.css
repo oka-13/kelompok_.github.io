@@ -1,0 +1,108 @@
+/* Reset margin dan padding serta mengatur font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Gaya umum untuk body (latar belakang halaman dan tata letak pusat) */
+body {
+    background-color: grey; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+}
+
+/* Gaya untuk formulir kontak */
+.contact-form {
+    background-color: #ffffff;
+    padding: 30px; /* Padding disesuaikan */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px; 
+    margin-top: 30px;
+    
+}
+
+/* Gaya untuk heading (Contact Us) */
+.contact-form h1 {
+    margin-bottom: 20px; 
+}
+
+/* Gaya untuk semua label */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Kontainer untuk first name dan last name */
+.name-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Gaya untuk grup input nama */
+.input-group {
+    width: 48%; 
+}
+
+/* Gaya untuk semua input dan textarea */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Kontainer untuk kotak query-type */
+.query-type-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 15px; 
+}
+
+/* Gaya untuk setiap kotak query type (General Enquiry dan Support Request) */
+.query-option {
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 10px;
+    width: 48%;
+    display: flex;
+    align-items: center;
+}
+
+/* Jarak kecil antara radio button dan label */
+.query-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+/* Gaya untuk kotak persetujuan */
+.consent {
+    margin-bottom: 15px;
+}
+
+/* Gaya tombol kirim */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
